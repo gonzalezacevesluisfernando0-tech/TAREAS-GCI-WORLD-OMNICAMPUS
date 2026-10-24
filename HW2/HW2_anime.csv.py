@@ -1,7 +1,6 @@
 import pandas as pd
 
 def homework(anime_data_extracted):
-    # aquí tu código
     result = anime_data_extracted.groupby("Type")["Score"].mean().sort_values(ascending=False)
     return result
 
